@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFE3D5;
+    font-family: sans-serif;
+    background-image: url(wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+main {
+/*
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 1rem;
+*/
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background: #E8CFB7;
+    border-radius: 10%;
+}
+
+section {
+     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: sticky;
+    text-align: center;
+    z-index: 1;
+
+}
+
+h2 {
+    grid-column: 1/-1;
+}
+h3 {
+    font-size: 20px;
+    color: brown;
+}
+
+.navButton{
+
+
+}
+.navButton:hover{
+    background-color:lightpink;
+    
+}
+.categories {
+    background: #946460;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.container-1 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 10px;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+
+}
+
+.box-1 {
+    display: flex;
+    flex-flow: column;
+    background-color: #FFE8E6;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: ;
+    max-width: 500px;
+    word-wrap: break-word;
+    box-shadow: 5px 5px 5px black;
+}
+
+.modal display: none;
+/* Hidden by default */
+position: fixed;
+/* Stay in place */
+z-index: 1;
+/* Sit on top */
+padding-top: 100px;
+/* Location of the box */
+left: 0;
+top: 0;
+width: 100%;
+/* Full width */
+height: 100%;
+/* Full height */
+overflow: auto;
+/* Enable scroll if needed */
+background-color: rgb(0, 0, 0);
+/* Fallback color */
+background-color: rgba(0, 0, 0, 0.4);
+/* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*padding: 60px;*/
+    text-align: center;
+/*    background: pink;
+*/  color: white;
+    font-size: 30px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+    text-decoration: none;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+#grid-item-main {
+    height: 600px;
+    background-color: pink;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#sold_out_status,#discount_price,#sold_out,#vegeterian,#alcohol {
+    display: none;
+}
+
+.hide {
+  display: none;
+}
+.modal-background {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #7c1f17;
+  margin: 1em;
+  padding: 2em;
+}
+
+@media screen and (min-width: 500px) {
+    nav {
+        flex-direction: row;
+    }
+}
+
+
+.container, .bg {
+    width:100%;
+    height: 100%;
+    position: relative; 
+    text-align: center;   
+}
+
+#meal_text {
+    font-size: 20px;
+}
+#meal_price {
+    font-size:25px;
+}
+#vegeterian {
+    color: darkgreen;
+}
+#sold_out {
+    color: red;
+}
+.button {
+    padding: 10px;
+    margin-top: 15px;
+}
+#sold_out_status {
+    color: red;
+font-weight: bold;}
+
+
+
+#discount_price {
+        text-decoration: ;
+
+}
+.modal-content { 
+    text-align: center;
+    background-color: #EBE8CB;
+    box-shadow: 5px 5px 5px black ;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    
+}
+.modal-image {
+    width: 40%;
+}
+#vegeterian {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+#meal_text {
+        font-weight: bold;
+        
+
+}
